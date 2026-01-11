@@ -35,10 +35,3 @@ Cette application Android permet de gérer des comptes bancaires (courant et ép
 - [Material Components](https://material.io/components) - Pour l'interface utilisateur
 - [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) - Pour la gestion asynchrone
 
-## Auteur
-
-[Votre nom]
-
-## Licence
-
-[Spécifiez votre licence ici]
