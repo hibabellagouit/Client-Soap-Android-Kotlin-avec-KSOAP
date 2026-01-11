@@ -78,8 +78,9 @@ class MainActivity : AppCompatActivity() {
     }
     
     /**
-    * Affiche la boîte de dialogue pour ajouter un compte.
+      * hibabellagouit
     */
+
     private fun showAddCompteDialog() {
         val dialogView = layoutInflater.inflate(R.layout.popup, null)
         

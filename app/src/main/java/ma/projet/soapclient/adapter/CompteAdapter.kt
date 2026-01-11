@@ -18,11 +18,7 @@ class CompteAdapter : RecyclerView.Adapter<CompteAdapter.CompteViewHolder>() {
     // Listeners pour gérer les clics sur Modifier et Supprimer
     var onEditClick: ((Compte) -> Unit)? = null
     var onDeleteClick: ((Compte) -> Unit)? = null
-    
-    /**
-    * Met à jour la liste des comptes affichés.
-    * @param newComptes Nouvelle liste de comptes.
-    */
+  
     fun updateComptes(newComptes: List<Compte>) {
         comptes.clear()
         comptes.addAll(newComptes)
@@ -30,8 +26,7 @@ class CompteAdapter : RecyclerView.Adapter<CompteAdapter.CompteViewHolder>() {
     }
     
     /**
-    * Supprime un compte de la liste.
-    * @param compte Compte à supprimer.
+      * hibabellagouit
     */
     fun removeCompte(compte: Compte) {
         val position = comptes.indexOf(compte)
@@ -57,14 +52,10 @@ class CompteAdapter : RecyclerView.Adapter<CompteAdapter.CompteViewHolder>() {
         holder.bind(comptes[position])
     }
     
-    /**
-    * Retourne le nombre total d'éléments dans la liste.
-    */
+ 
     override fun getItemCount() = comptes.size
     
-    /**
-    * Classe ViewHolder pour gérer les vues individuelles.
-    */
+
     inner class CompteViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val id: TextView = view.findViewById(R.id.textId)
         private val solde: TextView = view.findViewById(R.id.textSolde)
@@ -73,9 +64,7 @@ class CompteAdapter : RecyclerView.Adapter<CompteAdapter.CompteViewHolder>() {
         private val btnEdit: MaterialButton = view.findViewById(R.id.btnEdit)
         private val btnDelete: MaterialButton = view.findViewById(R.id.btnDelete)
         
-        /**
-        * Associe un objet Compte aux vues.
-        */
+       
         fun bind(compte: Compte) {
             id.text = "Compte Numéro ${compte.id}"
             solde.text = "${compte.solde} DH"

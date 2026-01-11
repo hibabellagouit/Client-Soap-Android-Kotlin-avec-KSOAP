@@ -2,7 +2,9 @@ package ma.projet.soapclient.beans
 
 import java.util.Date
 
-// Classe de données représentant un compte bancaire
+    /**
+      * hibabellagouit
+    */
 data class Compte(
     val id: Long?,              // Identifiant unique
     val solde: Double,          // Solde du compte
@@ -10,7 +12,9 @@ data class Compte(
     val type: TypeCompte        // Type de compte (COURANT ou EPARGNE)
 )
 
-// Énumération pour représenter les types de comptes
+    /**
+      * hibabellagouit
+    */
 enum class TypeCompte {
     COURANT, EPARGNE
 }
