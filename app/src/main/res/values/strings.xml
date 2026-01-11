@@ -1,0 +1,36 @@
+<resources>
+    <!-- Application -->
+    <string name="app_name">Gestion Comptes</string>
+    
+    <!-- Actions -->
+    <string name="add_account">Nouveau Compte</string>
+    <string name="edit">Modifier</string>
+    <string name="delete">Supprimer</string>
+    <string name="cancel">Annuler</string>
+    <string name="save">Enregistrer</string>
+    
+    <!-- Compte -->
+    <string name="balance">Solde</string>
+    <string name="account_type">Type de compte</string>
+    <string name="checking">Courant</string>
+    <string name="savings">Épargne</string>
+    <string name="account_number">Compte #%d</string>
+    <string name="creation_date">Créé le %s</string>
+    
+    <!-- Messages -->
+    <string name="account_added">Compte ajouté avec succès</string>
+    <string name="account_updated">Compte mis à jour</string>
+    <string name="account_deleted">Compte supprimé</string>
+    <string name="error_occurred">Une erreur est survenue</string>
+    <string name="confirm_delete">Supprimer ce compte ?</string>
+    <string name="confirm_delete_message">Cette action est irréversible</string>
+    <string name="no_accounts">Aucun compte trouvé</string>
+    
+    <!-- Validation -->
+    <string name="error_required">Ce champ est requis</string>
+    <string name="error_invalid_amount">Montant invalide</string>
+    
+    <!-- Formatage -->
+    <string name="currency_format">%.2f DH</string>
+    <string name="date_format">dd/MM/yyyy</string>
+</resources>
